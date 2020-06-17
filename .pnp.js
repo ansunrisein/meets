@@ -50,6 +50,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:16.13.1"
       ],
       [
+        "react-app-polyfill",
+        "npm:1.0.6"
+      ],
+      [
         "react-dom",
         "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:16.13.1"
       ],
@@ -82,6 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:7.2.1"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
+            ["react-app-polyfill", "npm:1.0.6"],
             ["react-dom", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:16.13.1"],
             ["react-dropzone", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:11.0.1"],
             ["react-scripts", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:3.4.1"],
@@ -9880,6 +9885,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:7.2.1"],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.13.1"],
+            ["react-app-polyfill", "npm:1.0.6"],
             ["react-dom", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:16.13.1"],
             ["react-dropzone", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:11.0.1"],
             ["react-scripts", "virtual:ed0eaf8f94c9d655f10a0615d8cec7ddc10152a79eb892a1bf85d99ff91cad7d301438cfa901d878d17074ecdc9c2adeb9f6b74de5a9973ffd06c25c9bf38227#npm:3.4.1"],

@@ -1,5 +1,6 @@
 .table {
     margin: auto;
+    align-self: center;
 }
 
 .cell {

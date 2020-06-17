@@ -8,7 +8,7 @@ import Matrix from './components/Matrix'
 import Icon from './components/Icon'
 
 const App = () => {
-    const {matrix, linked} = useGraph()
+    const {matrix, linked} = useGraph();
 
     return (
         <Dropzone>{
