@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
+  version: 6
   cacheKey: 4
 
 "@babel/code-frame@npm:7.8.3, @babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.8.3":
@@ -2157,7 +2157,6 @@ __metadata:
   peerDependencies:
     "@typescript-eslint/parser": ^2.0.0
     eslint: ^5.0.0 || ^6.0.0
-    typescript: "*"
   peerDependenciesMeta:
     typescript:
       optional: true
@@ -2188,7 +2187,6 @@ __metadata:
     eslint-visitor-keys: ^1.1.0
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0
-    typescript: "*"
   peerDependenciesMeta:
     typescript:
       optional: true
@@ -2207,8 +2205,6 @@ __metadata:
     lodash: ^4.17.15
     semver: ^6.3.0
     tsutils: ^3.17.1
-  peerDependencies:
-    typescript: "*"
   peerDependenciesMeta:
     typescript:
       optional: true
@@ -2486,6 +2482,15 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 241b797baf39b876afad81cda3df0c6d73e516a12834d42c7197806642223508c91fd49e6ffec4e40f8e0aa3712587562632cdcfdd48ac8fb5b389154a1c471f
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.5.0":
+  version: 8.15.0
+  resolution: "acorn@npm:8.15.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 8/309c6b49aedf1a2e34aaf266de06de04aab6eb097c02375c66fdeb0f64556a6a823540409914fb364d9a11bc30d79d485a2eba29af47992d3490e9886c4391c3
   languageName: node
   linkType: hard
 
@@ -3752,7 +3757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chownr@npm:^1.1.1, chownr@npm:^1.1.2":
+"chownr@npm:^1.1.1, chownr@npm:^1.1.2, chownr@npm:^1.1.4":
   version: 1.1.4
   resolution: "chownr@npm:1.1.4"
   checksum: 4a7f1a0b2637450fd15ddb085b10649487ddd1d59a8d9335b1aa5b1e9ad55840a591ab7d7f9b568001cb6777d017334477ab2e32e048788b13a069d011cd5781
@@ -6189,7 +6194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-minipass@npm:^1.2.5":
+"fs-minipass@npm:^1.2.7":
   version: 1.2.7
   resolution: "fs-minipass@npm:1.2.7"
   dependencies:
@@ -6232,6 +6237,7 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 8f61ef784058aa410def121afcf20014fbb845c678c04e43fe1fd1edec6c469c5452343b4a49960d89e8a207955c8e9b37a229af7a8fc5b28658c9e0faabe086
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
@@ -6244,27 +6250,28 @@ fsevents@^1.2.7:
     node-gyp: latest
     node-pre-gyp: "*"
   checksum: f97653eba7080ab16cfcdeb5d75663f50af436981374c59993476c8b3ece579ff6e2d9b2d24de3852495da7809beb6850b897d7b95f92157fd0eeffc74d12176
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.1.2#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.1.2#~builtin<compat/fsevents>":
   version: 2.1.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.2#builtin<compat/fsevents>::version=2.1.2&hash=495457"
+  resolution: "fsevents@patch:fsevents@npm%3A2.1.2#~builtin<compat/fsevents>::version=2.1.2&hash=31d12a"
   dependencies:
     node-gyp: latest
-  checksum: 6fb6ae0c1e5aca68fec6c0bf119d0dc9a1d653af60925c7ec69868f0ac68fa6930eeb769745030ecb560e00c144c74068da62bb77a000cc7dc263963ba4e2d7f
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^1.2.7#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.12
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.12#builtin<compat/fsevents>::version=1.2.12&hash=495457"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.12#~builtin<compat/fsevents>::version=1.2.12&hash=d11327"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
     node-gyp: latest
     node-pre-gyp: "*"
-  checksum: 181d9f88933413ce7653288b743abae38bb12d4327552698dcfa4663583933f79e63e8ce0ec7987ca087e0c49add8f05e735d17ada20bd406403fa603ded93c2
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
@@ -8951,6 +8958,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.6":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 8/75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^1.0.2":
   version: 1.0.2
   resolution: "minipass-collect@npm:1.0.2"
@@ -8978,7 +8992,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"minipass@npm:^2.6.0, minipass@npm:^2.8.6, minipass@npm:^2.9.0":
+"minipass@npm:^2.6.0, minipass@npm:^2.9.0":
   version: 2.9.0
   resolution: "minipass@npm:2.9.0"
   dependencies:
@@ -8997,7 +9011,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"minizlib@npm:^1.2.1":
+"minizlib@npm:^1.3.3":
   version: 1.3.3
   resolution: "minizlib@npm:1.3.3"
   dependencies:
@@ -9065,7 +9079,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.3, mkdirp@npm:~0.5.1":
+"mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.3, mkdirp@npm:~0.5.1":
   version: 0.5.3
   resolution: "mkdirp@npm:0.5.3"
   dependencies:
@@ -9073,6 +9087,17 @@ fsevents@^1.2.7:
   bin:
     mkdirp: bin/cmd.js
   checksum: 92d96ba83ca6013b7077c3fe776766c823c468de845a4965f5df483c38ad4d12829aab5a7a4e88e9defc4041f18a7cef2172e7bb19f946ae09a3821174b95256
+  languageName: node
+  linkType: hard
+
+"mkdirp@npm:^0.5.5":
+  version: 0.5.6
+  resolution: "mkdirp@npm:0.5.6"
+  dependencies:
+    minimist: ^1.2.6
+  bin:
+    mkdirp: bin/cmd.js
+  checksum: 8/0c91b721bb12c3f9af4b77ebf73604baf350e64d80df91754dc509491ae93bf238581e59c7188360cec7cb62fc4100959245a42cfe01834efedc5e9d068376c2
   languageName: node
   linkType: hard
 
@@ -11998,28 +12023,28 @@ resolve@1.15.0:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.1.7#builtin<compat/resolve>":
+"resolve@patch:resolve@1.1.7#~builtin<compat/resolve>":
   version: 1.1.7
-  resolution: "resolve@patch:resolve@npm%3A1.1.7#builtin<compat/resolve>::version=1.1.7&hash=e7677c"
-  checksum: 5238277188664a6948dd7288d16f1a09e098fb36d4f9b2c749130969c998faa9bccefd30fd618073af5210fdc768730cadfc15588bbee4fc64b257f20cab6783
+  resolution: "resolve@patch:resolve@npm%3A1.1.7#~builtin<compat/resolve>::version=1.1.7&hash=3bafbf"
+  checksum: 8/e9dbca78600ae56835c43a09f1276876c883e4b4bbd43e2683fa140671519d2bdebeb1c1576ca87c8c508ae2987b3ec481645ac5d3054b0f23254cfc1ce49942
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.15.0#builtin<compat/resolve>":
+"resolve@patch:resolve@1.15.0#~builtin<compat/resolve>":
   version: 1.15.0
-  resolution: "resolve@patch:resolve@npm%3A1.15.0#builtin<compat/resolve>::version=1.15.0&hash=e7677c"
+  resolution: "resolve@patch:resolve@npm%3A1.15.0#~builtin<compat/resolve>::version=1.15.0&hash=c3c19d"
   dependencies:
     path-parse: ^1.0.6
-  checksum: a977306c59618000d5954b2fb9d6c100c15f2c4df6acdab3e86bdbd3ae1e8d52e89cbbf19e6dce93ce535af1bba097c26332b1a0f85fd4daa45943ec06d90fe8
+  checksum: 8/fd308e2054e85f829a29e2a5f4634942272b9bfc2771f95fbd1c2068f47a7f4f0f5d4ccb11cb4522f9a8490edd036299f7a85e76327ed8b91bd1a41d314e2bf0
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>":
   version: 1.15.1
-  resolution: "resolve@patch:resolve@npm%3A1.15.1#builtin<compat/resolve>::version=1.15.1&hash=e7677c"
+  resolution: "resolve@patch:resolve@npm%3A1.15.1#~builtin<compat/resolve>::version=1.15.1&hash=c3c19d"
   dependencies:
     path-parse: ^1.0.6
-  checksum: fe7e72ddef33d5c157991b824ba2d439cafcd386cb4b26d86c32e77fea442bdd9a93c6cdd93ab90f87a29449008df64b53a8310dd89ebe88ea87fb5db09c03aa
+  checksum: 8/db40f1203ef19e18edc66801c7a5903b903f20c318c1d7d234dd5b792361bf336b556d27e7f1831871d15471d3d7ed7baad979a781fb57463a36ea1abd293608
   languageName: node
   linkType: hard
 
@@ -12155,6 +12180,13 @@ resolve@1.15.0:
   version: 5.2.0
   resolution: "safe-buffer@npm:5.2.0"
   checksum: e513079353a235749e64dc3b1ade741caf651c09d1291ee826e68d42c08913dcd2c76b291dd23979b0fd0bd551d99f4a3d8cc05aef4e9c75bebf6cbbd310b129
+  languageName: node
+  linkType: hard
+
+"safe-buffer@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "safe-buffer@npm:5.2.1"
+  checksum: 8/b99c4b41fdd67a6aaf280fcd05e9ffb0813654894223afb78a31f14a19ad220bba8aba1cb14eddce1fcfb037155fe6de4e861784eb434f7d11ed58d1e70dd491
   languageName: node
   linkType: hard
 
@@ -13206,17 +13238,17 @@ resolve@1.15.0:
   linkType: hard
 
 "tar@npm:^4.4.2":
-  version: 4.4.13
-  resolution: "tar@npm:4.4.13"
+  version: 4.4.19
+  resolution: "tar@npm:4.4.19"
   dependencies:
-    chownr: ^1.1.1
-    fs-minipass: ^1.2.5
-    minipass: ^2.8.6
-    minizlib: ^1.2.1
-    mkdirp: ^0.5.0
-    safe-buffer: ^5.1.2
-    yallist: ^3.0.3
-  checksum: d325c316ac329ecb18f2b8cd3f85a80ab4a4105ada601b9253aaafae3fc14268e3cd874ccc265b6a08e60ebd17fbc31bd3dbc0d1018f874b536eb2a6e8ef6d9c
+    chownr: ^1.1.4
+    fs-minipass: ^1.2.7
+    minipass: ^2.9.0
+    minizlib: ^1.3.3
+    mkdirp: ^0.5.5
+    safe-buffer: ^5.2.1
+    yallist: ^3.1.1
+  checksum: 8/423c8259b17f8f612cef9c96805d65f90ba9a28e19be582cd9d0fcb217038219f29b7547198e8fd617da5f436376d6a74b99827acd1238d2f49cf62330f9664e
   languageName: node
   linkType: hard
 
@@ -13450,8 +13482,6 @@ resolve@1.15.0:
 "ts-pnp@npm:1.1.6, ts-pnp@npm:^1.1.6":
   version: 1.1.6
   resolution: "ts-pnp@npm:1.1.6"
-  peerDependencies:
-    typescript: "*"
   peerDependenciesMeta:
     typescript:
       optional: true
@@ -13973,7 +14003,6 @@ resolve@1.15.0:
     yargs: 12.0.5
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-    webpack-cli: "*"
   peerDependenciesMeta:
     webpack-cli:
       optional: true
@@ -14448,7 +14477,7 @@ resolve@1.15.0:
   languageName: node
   linkType: hard
 
-"yallist@npm:^3.0.0, yallist@npm:^3.0.2, yallist@npm:^3.0.3":
+"yallist@npm:^3.0.0, yallist@npm:^3.0.2, yallist@npm:^3.1.1":
   version: 3.1.1
   resolution: "yallist@npm:3.1.1"
   checksum: f352c93b92f601bb0399210bca37272e669c961e9bd886bac545380598765cbfdfb4f166e7b6c57ca4ec8a5af4ab3fa0fd78a47f9a7d655a3d580ff0fc9e7d79
